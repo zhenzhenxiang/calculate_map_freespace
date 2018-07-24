@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
   std::cout << "Floor height was set to: " << floor_height << std::endl;
 
   cv::Mat map_mB;
-  cv::medianBlur(map_image, map_mB, 5);
+  cv::medianBlur(map_image, map_mB, 3);
   cv::imshow("1.Median blur", map_mB);
 
   /* Segment unknown area */
